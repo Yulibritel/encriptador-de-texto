@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Mensajes</h1>
+        <textarea id="input-text" placeholder="Escribe tu mensaje aquí"></textarea>
+        <div class="options">
+            <label>
+                <input type="radio" name="action" value="encrypt" checked> Encriptar
+            </label>
+            <label>
+                <input type="radio" name="action" value="decrypt"> Desencriptar
+            </label>
+        </div>
+        <button onclick="processText()">Procesar</button>
+        <textarea id="output-text" placeholder="El resultado aparecerá aquí" readonly></textarea>
+        <button onclick="copyText()">Copiar al portapapeles</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
